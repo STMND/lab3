@@ -1,0 +1,19 @@
+services:
+  web:
+    container_name: xogame-web
+    build: .
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - 5555:8080
+  database:
+    container_name: xogame-database
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 1234
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -q -U postgres -d postgres"]
+      interval: 10s
+      timeout: 7s
+      retries: 10
