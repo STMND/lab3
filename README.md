@@ -1,8 +1,10 @@
-# lab3
+# LR3
 
-#use command
+#use
 
 #docker compose up
 
 #in the root directory
-#site will be available at http://localhost:8080/
+
+#site will be available at
+#http://localhost:8080/
