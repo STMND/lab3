@@ -4,3 +4,4 @@
 <a align="center">в корневом каталоге проекта</a><br>
 <a align="center">Доступ по ссылке:</a><br>
 <a align="center" href="https://localhost:8080">XO-GAME SITE</a>
+<a align="center">или https://localhost:8080</a>
